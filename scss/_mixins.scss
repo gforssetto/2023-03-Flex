@@ -1,0 +1,10 @@
+@mixin displayColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin displayCenter ($align,$justify) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+}
