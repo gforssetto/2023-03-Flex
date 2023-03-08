@@ -51,26 +51,27 @@ main > section > article {
     row-gap: 10vh;
     padding-top: 5vh;
   }
-  .row {
-    align-items: center;
-    row-gap: 5vh;
-  }
-  .row > article {
+  .teamSkills > article, .row > article {
     display: flex;
     flex-direction: column;
     row-gap: 2vh;
     align-items: center;
     justify-content: center;
   }
-  .row > article > p {
+  .teamSkills > article > p, .row > article > p {
     text-align: center;
     width: 80%;
   }
-  .row > section {
+  .teamSkills aside,
+  .teamSkills > section, .row > section {
     display: flex;
     flex-direction: column;
     row-gap: 3vh;
     align-items: center;
+  }
+  .row {
+    align-items: center;
+    row-gap: 5vh;
   }
   .services > section > aside:nth-child(1) {
     background-color: #1ABC9C;
@@ -117,5 +118,57 @@ main > section > article {
   }
   .portifolio figcaption {
     display: none;
+  }
+  .teamSkills {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+  }
+  .teamSkills > article > p {
+    font-style: italic;
+    font-size: 14px;
+    width: 90%;
+  }
+  .teamSkills aside {
+    width: 90%;
+  }
+  .teamSkills h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: italic;
+    color: gray;
+  }
+  .teamSkills ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    align-items: center;
+    width: 100%;
+  }
+  .teamSkills li {
+    display: flex;
+    width: 90%;
+    background-color: gainsboro;
+    height: 7vh;
+  }
+  .teamSkills h6 {
+    background-color: #EC523F;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+  }
+  .teamSkills li:first-child > h6 {
+    width: 90%;
+  }
+  .teamSkills li:nth-child(3) > h6 {
+    width: 70%;
+  }
+  .teamSkills small {
+    color: whitesmoke;
+    padding-left: 2vh;
+    text-transform: uppercase;
+    font-size: 14px;
   }
 }/*# sourceMappingURL=style.css.map */
