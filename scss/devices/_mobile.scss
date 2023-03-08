@@ -144,12 +144,29 @@
 
     }
 
-    // team
-    
+    // team   
     // team - gallery
+    .teamGallery {
+        @include displayColumn(3vh);
+
+        > figure {
+            align-items: center
+        }
+
+        img {
+            width: 40vh;
+            height: 40vh;
+            border-radius: 50%;
+        }
+
+        figcaption {
+            display: none
+        }
+
+
+    }
 
     // team - skills
-
     .teamSkills {
         @include displayColumn(5vh);
 
@@ -273,5 +290,23 @@
         background-color: $defaultColor;
         border: 3px solid transparent;
         color: whitesmoke;
+    }
+
+    // footer
+    footer {
+        padding-top: 10vh;
+        @include displayColumn (2vh);
+        align-items: center;
+
+        p {
+            font-size: 14px;
+        }
+
+        a {
+            background-color: $defaultColor;
+            padding: 1vh 2vh;
+            color: whitesmoke;
+            text-align: center;
+        }
     }
 }

@@ -158,6 +158,22 @@ header {
   .portifolio figcaption {
     display: none;
   }
+  .teamGallery {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+  }
+  .teamGallery > figure {
+    align-items: center;
+  }
+  .teamGallery img {
+    width: 40vh;
+    height: 40vh;
+    border-radius: 50%;
+  }
+  .teamGallery figcaption {
+    display: none;
+  }
   .teamSkills {
     display: flex;
     flex-direction: column;
@@ -260,5 +276,21 @@ header {
     background-color: #EC523F;
     border: 3px solid transparent;
     color: whitesmoke;
+  }
+  footer {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    align-items: center;
+  }
+  footer p {
+    font-size: 14px;
+  }
+  footer a {
+    background-color: #EC523F;
+    padding: 1vh 2vh;
+    color: whitesmoke;
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
