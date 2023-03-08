@@ -210,4 +210,55 @@ header {
     text-transform: uppercase;
     font-size: 14px;
   }
+  .contact > section > article {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+    width: 90%;
+    font-size: 14px;
+  }
+  .contact > section > section {
+    width: 90%;
+  }
+  .contact ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+    list-style-type: none;
+    color: dimgray;
+  }
+  .contact ul a {
+    color: #EC523F;
+  }
+  .contact li {
+    display: flex;
+    -moz-column-gap: 1vh;
+         column-gap: 1vh;
+  }
+  form {
+    row-gap: 2vh;
+  }
+  input {
+    height: 7vh;
+  }
+  ::-moz-placeholder {
+    padding: 2vh;
+    color: darkgray;
+  }
+  ::placeholder {
+    padding: 2vh;
+    color: darkgray;
+  }
+  textarea {
+    resize: none;
+    height: 30vh;
+  }
+  input, textarea {
+    border: 1px solid gainsboro;
+  }
+  [type=submit] {
+    background-color: #EC523F;
+    border: 3px solid transparent;
+    color: whitesmoke;
+  }
 }/*# sourceMappingURL=style.css.map */

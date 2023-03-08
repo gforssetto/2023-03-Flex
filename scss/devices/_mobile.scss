@@ -217,4 +217,61 @@
             font-size: 14px;
         }
     }
+
+    // contact 
+    .contact {
+        > section > article {
+            @include displayColumn(3vh);
+            width: 90%;
+            font-size: 14px;
+        }
+
+        > section > section {
+            width: 90%
+        }
+
+        ul {
+            @include displayColumn(1vh);
+            list-style-type: none;
+            color: dimgray;
+
+            a {
+                color: $defaultColor;
+            }
+        }
+
+        li {
+            display: flex;
+            column-gap: 1vh;
+        }
+
+    }
+
+    form {
+        row-gap: 2vh;
+    }
+
+    input {
+        height: 7vh;
+    }
+
+    ::placeholder{
+        padding: 2vh;
+        color: darkgray;
+    }
+
+    textarea {
+        resize: none;
+        height: 30vh;
+    }
+
+    input, textarea {
+        border: 1px solid gainsboro;
+    }
+
+    [type="submit"]{
+        background-color: $defaultColor;
+        border: 3px solid transparent;
+        color: whitesmoke;
+    }
 }
