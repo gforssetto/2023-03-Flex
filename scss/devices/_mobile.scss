@@ -21,14 +21,16 @@
             }
 
         }
+
+        > section {
+            @include displayColumn(3vh);
+            align-items: center
+        }
     }
     // services
     .services {
         
-
         > section {
-            @include displayColumn(3vh);
-            align-items: center;
 
             > aside:nth-child(1) {
                 background-color: $seaGreen;
@@ -75,5 +77,21 @@
             border-bottom: 1px solid whitesmoke;
         }
         
+    }
+    // portifolio 
+    .portifolio {
+
+        > section {
+            width: 95%;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        figcaption {
+            display: none;
+        }
+
     }
 }
