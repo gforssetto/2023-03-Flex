@@ -2,12 +2,8 @@
     img {
         width: 30%;
     }
-    
-    main {
-        row-gap: 10vh;
-        padding-top: 5vh;
-    }
 
+    // header 
     header {
         height: 50vh;
 
@@ -43,9 +39,82 @@
         }
     }
 
+    // nav
+
+    nav {
+        background-color: white;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0vh 5%;
+        position: relative;
+
+        > article {
+            display: flex;
+            align-items: center;
+            column-gap: 1vh;
+        }
+
+        h3 {
+            color: $defaultColor;
+            font-size: 30px;
+        }
+
+        i {
+            font-size: 50px;
+            color: white;
+        }
+        
+        aside {
+            background-color: $defaultColor;
+            padding: 0vh 1vh;
+        }
+
+    }
+
+    details {
+        width: 90%;
+        text-align: right;
+        position: absolute;
+        > ul {
+            position: absolute;
+            width: 100%;
+            background-color: white;
+            row-gap: 2vh;
+        }
+
+        li {
+            display: flex;
+            justify-content: right;
+            width: 100%;
+        }
+
+        a {
+            text-transform: uppercase;
+        }
+    }
+
+    summary {
+        background-color: $defaultColor;
+        color: white;
+        padding: 2vh;
+        font-size: 20px;
+        // height: 5vh;
+        // width: 5vh;
+        // display: flex;
+        // @include displayCenter
+    }
+
     nav > ul {
         display: none;
 
+    }
+
+    // main
+    main {
+        row-gap: 10vh;
+        padding-top: 5vh;
     }
 
     %title {

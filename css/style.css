@@ -54,10 +54,6 @@ header {
   img {
     width: 30%;
   }
-  main {
-    row-gap: 10vh;
-    padding-top: 5vh;
-  }
   header {
     height: 50vh;
   }
@@ -87,8 +83,64 @@ header {
   header h2 {
     border-bottom: 1px solid whitesmoke;
   }
+  nav {
+    background-color: white;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vh 5%;
+    position: relative;
+  }
+  nav > article {
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 1vh;
+         column-gap: 1vh;
+  }
+  nav h3 {
+    color: #EC523F;
+    font-size: 30px;
+  }
+  nav i {
+    font-size: 50px;
+    color: white;
+  }
+  nav aside {
+    background-color: #EC523F;
+    padding: 0vh 1vh;
+  }
+  details {
+    width: 90%;
+    text-align: right;
+    position: absolute;
+  }
+  details > ul {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    row-gap: 2vh;
+  }
+  details li {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+  }
+  details a {
+    text-transform: uppercase;
+  }
+  summary {
+    background-color: #EC523F;
+    color: white;
+    padding: 2vh;
+    font-size: 20px;
+  }
   nav > ul {
     display: none;
+  }
+  main {
+    row-gap: 10vh;
+    padding-top: 5vh;
   }
   .teamSkills > article, .row > article {
     display: flex;
