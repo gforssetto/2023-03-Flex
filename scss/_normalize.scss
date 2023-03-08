@@ -38,6 +38,7 @@ form,
 main,
 main > section,
 main > section > article {
-    @include displayColumn;
+    display: flex;
+    flex-direction: column;
 }
 
