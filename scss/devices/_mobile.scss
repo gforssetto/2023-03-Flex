@@ -1,3 +1,79 @@
-@media(min-width:$mobileScreen){
+@media(min-width: $mobileScreen){
+    img {
+        width: 30%;
+    }
     
+    main {
+        row-gap: 10vh;
+        padding-top: 5vh;
+    }
+
+    .row {
+        align-items: center;
+        row-gap: 5vh;
+        > article {
+            @include displayColumn(2vh);
+            @include displayCenter;
+
+            > p {
+                text-align: center;
+                width: 80%
+            }
+
+        }
+    }
+    // services
+    .services {
+        
+
+        > section {
+            @include displayColumn(3vh);
+            align-items: center;
+
+            > aside:nth-child(1) {
+                background-color: $seaGreen;
+            }
+
+            > aside:nth-child(2) {
+                background-color: $orange;
+            }
+
+            > aside:nth-child(3) {
+                background-color: $blue;
+            }
+
+            > aside:nth-child(4) {
+                background-color: $green;
+            }
+
+        }
+
+        aside {
+            min-height: 50vh;
+            width: 85%;
+            @include displayColumn(3vh);
+            @include displayCenter;
+            color: whitesmoke;
+            
+            p {
+                text-align: center;
+                color: whitesmoke;
+                width: 80%;
+                font-size: 18px;
+            }
+            
+        }
+
+        i {
+            display: none;
+        }
+
+        h4 {
+            text-transform: uppercase;
+            font-size: 24px;
+            padding-bottom:1vh ;
+            border-bottom: 1px solid whitesmoke;
+        }
+        
+    }
 }
