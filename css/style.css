@@ -43,6 +43,13 @@ main > section > article {
   flex-direction: column;
 }
 
+header {
+  background-image: url(/img/pic-09.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media (min-width: 200px) {
   img {
     width: 30%;
@@ -50,6 +57,38 @@ main > section > article {
   main {
     row-gap: 10vh;
     padding-top: 5vh;
+  }
+  header {
+    height: 50vh;
+  }
+  header > section {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(80, 80, 80, 0.8);
+    align-items: center;
+    row-gap: 4vh;
+  }
+  header > section > ul {
+    display: none;
+  }
+  header > section > article {
+    align-items: center;
+    color: white;
+    row-gap: 2vh;
+  }
+  header article > a {
+    color: whitesmoke;
+    background-color: #EC523F;
+    border-radius: 5px;
+    padding: 1vh 2vh;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  header h2 {
+    border-bottom: 1px solid whitesmoke;
+  }
+  nav > ul {
+    display: none;
   }
   .teamSkills > article, .row > article {
     display: flex;

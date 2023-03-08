@@ -8,6 +8,46 @@
         padding-top: 5vh;
     }
 
+    header {
+        height: 50vh;
+
+        > section {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(80,80,80,.8);
+            align-items: center;
+            row-gap: 4vh;
+            > ul {
+                display: none;
+            }
+
+            > article {
+                align-items: center;
+                color: white;
+                row-gap: 2vh;
+            }
+
+        }
+
+        article > a {
+            color: whitesmoke;
+            background-color: $defaultColor;
+            border-radius: 5px;
+            padding: 1vh 2vh;
+            font-weight: 400;
+            font-size: 14px;
+        }
+        
+        h2 {
+            border-bottom: 1px solid whitesmoke;
+        }
+    }
+
+    nav > ul {
+        display: none;
+
+    }
+
     %title {
         @include displayColumn(2vh);
         @include displayCenter;
