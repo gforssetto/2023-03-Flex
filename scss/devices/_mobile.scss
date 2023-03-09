@@ -18,7 +18,9 @@
             }
 
             > article {
+                height: 100%;
                 align-items: center;
+                justify-content: center;
                 color: white;
                 row-gap: 2vh;
             }
@@ -92,6 +94,8 @@
 
         a {
             text-transform: uppercase;
+            color: dimgray;
+            padding: 1vh 3vh;
         }
     }
 
