@@ -349,4 +349,28 @@ header {
     color: whitesmoke;
     text-align: center;
   }
+}
+@media (min-width: 600px) {
+  .contact > section {
+    width: 90%;
+    flex-direction: row;
+    -moz-column-gap: 4vw;
+         column-gap: 4vw;
+    align-items: flex-start;
+  }
+  input {
+    height: 5vh;
+  }
+  textarea {
+    height: 20vh;
+  }
+  [type=submit] {
+    border: 2px solid #EC523F;
+    transition: 0.4s;
+  }
+  [type=submit]:hover {
+    background-color: transparent;
+    color: #EC523F;
+    cursor: pointer;
+  }
 }/*# sourceMappingURL=style.css.map */
