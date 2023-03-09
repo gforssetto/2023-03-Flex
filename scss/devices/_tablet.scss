@@ -34,6 +34,34 @@
         }
     }
 
+    nav {
+        width: 80%;
+    }
+
+    details {
+        > ul {
+            padding-top: .5vh;
+            background-color: transparent;
+            row-gap: 0;
+        }
+
+        li {
+            background-color: white;
+        }
+
+        a {
+            padding: 2vh;
+
+            &:hover {
+                color: $defaultColor;
+            }
+        }
+    }
+
+    summary {
+        padding: 1vh;
+    }
+
     // main
     
     // services
@@ -52,6 +80,78 @@
         }
     }
 
+    // portiforlio
+    .portifolio {
+
+        > section {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            column-gap: 3vw;
+
+            > figure {
+                width: 45%;
+                height: 35vh;
+                position: relative;
+                overflow: hidden;
+                display: flex;
+                justify-content: flex-end;
+
+                &:hover figcaption {
+                    height: 140%;
+                }
+            }
+
+            figcaption {
+                display: flex;
+                bottom: -20%;
+                position: absolute;
+                z-index: 2;
+                width: 100%;
+                height: 0%;
+                background-color: rgba($color: $defaultColor, $alpha: 1);
+                row-gap: 2vh;
+                @include displayCenter;
+                color: white;
+                transition: .4s;
+
+                a {
+                    width: 5vh;
+                    height: 5vh;
+                    background-color: white;
+                    border-radius: 50%;
+                    display: flex;
+                    @include displayCenter;
+                    color: $defaultColor;
+
+                    &:hover {
+                        background-color: transparent;
+                        color: white;
+                    }
+
+                }
+
+            }
+
+            img {
+                position: absolute;
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+
+        h5 {
+            font-size: 20px;
+        }
+
+        p {
+            color: black;
+
+        }
+    }
+
     // team
     // teamGallery
     .teamGallery {
@@ -61,12 +161,6 @@
         justify-content: center;
         column-gap: 4vw;
         position: relative;
-
-
-        figcaption {
-            display: flex;
-            visibility: hidden;
-        }
 
         figure {
             width: 40vh;
@@ -79,18 +173,19 @@
 
 
             &:hover figcaption  {
-                height: 100%;
-                visibility: visible;
+                height: 140%;
             }
         }
 
         figcaption {
             display: flex;
+            bottom: -20%;
+            display: flex;
             z-index: 2;
             position: absolute;
             width: 100%;
             height: 0%;
-            transition: .3s;
+            transition: .4s;
             background-color: rgba($color: $defaultColor, $alpha: 0.8);
 
             @include displayCenter;
@@ -115,8 +210,8 @@
                 @include displayCenter;
                 font-size: 18px;
                 border-radius: 50%;
-                width: 4vh;
-                height: 4vh;
+                width: 5vh;
+                height: 5vh;
                 transition: .4s;
 
                 &:hover {
