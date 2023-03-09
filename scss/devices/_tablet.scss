@@ -34,6 +34,24 @@
         }
     }
 
+    // main
+    
+    // services
+    .services {
+
+        > section {
+            flex-direction: row;
+            flex-wrap: wrap;
+            column-gap:3vw ;
+            justify-content: center;
+            
+            aside {
+                width: 45%;
+                height: 35vh;
+            }
+        }
+    }
+
     // team
     // teamGallery
     .teamGallery {

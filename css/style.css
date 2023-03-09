@@ -378,6 +378,17 @@ header {
     width: 5vh;
     text-align: center;
   }
+  .services > section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    -moz-column-gap: 3vw;
+         column-gap: 3vw;
+    justify-content: center;
+  }
+  .services > section aside {
+    width: 45%;
+    height: 35vh;
+  }
   .teamGallery {
     flex-direction: row;
     flex-wrap: wrap;
