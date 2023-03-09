@@ -120,6 +120,22 @@
 
     }
 
+    // teamSkills
+    .teamSkills {
+        align-items: center;
+
+        > section {
+            width: 90%;
+            flex-direction: row;
+            align-items: flex-start;
+            column-gap: 3vw;
+        }
+
+        small {
+            font-size: 12px;
+        }
+    }
+
     // contat
     .contact {
 

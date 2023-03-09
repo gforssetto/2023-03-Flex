@@ -449,6 +449,19 @@ header {
     height: 100%;
     position: absolute;
   }
+  .teamSkills {
+    align-items: center;
+  }
+  .teamSkills > section {
+    width: 90%;
+    flex-direction: row;
+    align-items: flex-start;
+    -moz-column-gap: 3vw;
+         column-gap: 3vw;
+  }
+  .teamSkills small {
+    font-size: 12px;
+  }
   .contact > section {
     width: 90%;
     flex-direction: row;
