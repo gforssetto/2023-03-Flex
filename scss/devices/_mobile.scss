@@ -77,8 +77,10 @@
 
     details {
         width: 90%;
-        text-align: right;
         position: absolute;
+        text-align: right;
+        // display: flex;
+
         > ul {
             position: absolute;
             width: 100%;
@@ -99,7 +101,7 @@
         }
     }
 
-    summary {
+    [class*="bars"] {
         background-color: $defaultColor;
         color: white;
         padding: 2vh;
@@ -107,7 +109,10 @@
         // height: 5vh;
         // width: 5vh;
         // display: flex;
-        // @include displayCenter
+        // @include displayCenter;
+        // position: absolute;
+        // left: 90%;
+        // bottom: 50%;
     }
 
     nav > ul {

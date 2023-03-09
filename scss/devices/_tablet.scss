@@ -1,5 +1,125 @@
 @media(min-width: $tabletScreen){
-    
+    // header 
+    header {
+        > section {
+            > ul {
+                display: flex;
+                list-style-type: none;
+                padding-top: 2vh;
+                column-gap: 2vw;
+            }
+        }
+
+        article > a {
+            border:  2px solid $defaultColor;
+            transition: .4s;
+
+            &:hover {
+                background-color: transparent;
+            }
+
+        }
+
+        li [class*="envelope"],
+        li [class*="brands"] {
+            display: flex;
+            @include displayCenter;
+            border: 1px solid whitesmoke;
+            border-radius: 50%;
+            background-color: whitesmoke;
+            color: dimgray;
+            height: 5vh;
+            width: 5vh;
+            text-align: center;
+        }
+    }
+
+    // team
+    // teamGallery
+    .teamGallery {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: unset;
+        justify-content: center;
+        column-gap: 4vw;
+        position: relative;
+
+
+        figcaption {
+            display: flex;
+            visibility: hidden;
+        }
+
+        figure {
+            width: 40vh;
+            height: 40vh;
+            position: relative;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            justify-content: flex-end;
+
+
+            &:hover figcaption  {
+                height: 100%;
+                visibility: visible;
+            }
+        }
+
+        figcaption {
+            display: flex;
+            z-index: 2;
+            position: absolute;
+            width: 100%;
+            height: 0%;
+            transition: .3s;
+            background-color: rgba($color: $defaultColor, $alpha: 0.8);
+
+            @include displayCenter;
+            color: white;
+            row-gap: 2vh;
+
+            > h4 {
+                border-bottom: 1px solid white;
+                padding-bottom: 1vh;
+            }
+
+            ul {
+                display: flex;
+                list-style-type: none;
+                column-gap: 2vh;
+            }
+
+            a {
+                background-color: white;
+                color: $defaultColor;
+                display: flex;
+                @include displayCenter;
+                font-size: 18px;
+                border-radius: 50%;
+                width: 4vh;
+                height: 4vh;
+                transition: .4s;
+
+                &:hover {
+                    background-color: $defaultColor;
+                    color: white;
+
+                }
+            }
+
+            
+        }
+
+        img {
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+
+    }
+
     // contat
     .contact {
 
