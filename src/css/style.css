@@ -1,0 +1,706 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+main h2 {
+  color: dimgray;
+  text-transform: uppercase;
+  border-bottom: 1px solid dimgray;
+  font-weight: 600;
+}
+
+small {
+  text-transform: uppercase;
+}
+
+p {
+  color: dimgray;
+  line-height: 1.5;
+}
+
+body,
+header > section,
+header > section > article,
+figure,
+figcaption,
+details > ul,
+form,
+main,
+main > section,
+main > section > article {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-image: url(/img/pic-09.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 200px) {
+  img {
+    width: 30%;
+  }
+  header {
+    height: 70vh;
+  }
+  header > section {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(80, 80, 80, 0.8);
+    align-items: center;
+    row-gap: 4vh;
+  }
+  header > section > ul {
+    display: none;
+  }
+  header > section > article {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    row-gap: 2vh;
+  }
+  header article > a {
+    color: whitesmoke;
+    background-color: rgb(236, 82, 63);
+    border-radius: 5px;
+    padding: 1vh 2vh;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  header h2 {
+    border-bottom: 1px solid whitesmoke;
+  }
+  nav {
+    background-color: white;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vh 5%;
+    position: relative;
+  }
+  nav > article {
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 1vh;
+         column-gap: 1vh;
+  }
+  nav h3 {
+    color: rgb(236, 82, 63);
+    font-size: 30px;
+  }
+  nav i {
+    font-size: 50px;
+    color: white;
+  }
+  nav aside {
+    background-color: rgb(236, 82, 63);
+    padding: 0vh 1vh;
+  }
+  details {
+    width: 90%;
+    position: absolute;
+    text-align: right;
+  }
+  details > ul {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    row-gap: 2vh;
+  }
+  details li {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+  }
+  details a {
+    text-transform: uppercase;
+    color: dimgray;
+    padding: 1vh 3vh;
+  }
+  [class*=bars] {
+    background-color: rgb(236, 82, 63);
+    color: white;
+    padding: 2vh;
+    font-size: 20px;
+  }
+  nav > ul {
+    display: none;
+  }
+  main {
+    row-gap: 10vh;
+    padding-top: 5vh;
+  }
+  .teamSkills > article, .row > article {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .teamSkills > article > p, .row > article > p {
+    text-align: center;
+    width: 80%;
+  }
+  .teamSkills aside,
+  .teamSkills > section, .row > section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+    align-items: center;
+  }
+  .row {
+    align-items: center;
+    row-gap: 5vh;
+  }
+  .services > section > aside:nth-child(1) {
+    background-color: #1ABC9C;
+  }
+  .services > section > aside:nth-child(2) {
+    background-color: #E67E22;
+  }
+  .services > section > aside:nth-child(3) {
+    background-color: #3498D8;
+  }
+  .services > section > aside:nth-child(4) {
+    background-color: #2ECC71;
+  }
+  .services aside {
+    min-height: 50vh;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+  }
+  .services aside p {
+    text-align: center;
+    color: whitesmoke;
+    width: 80%;
+    font-size: 18px;
+  }
+  .services i {
+    display: none;
+  }
+  .services h4 {
+    text-transform: uppercase;
+    font-size: 24px;
+    padding-bottom: 1vh;
+    border-bottom: 1px solid whitesmoke;
+  }
+  .portifolio > section {
+    width: 95%;
+  }
+  .portifolio img {
+    width: 100%;
+  }
+  .portifolio figcaption {
+    display: none;
+  }
+  .teamGallery {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+  }
+  .teamGallery > figure {
+    align-items: center;
+  }
+  .teamGallery img {
+    width: 40vh;
+    height: 40vh;
+    border-radius: 50%;
+  }
+  .teamGallery figcaption {
+    display: none;
+  }
+  .teamSkills {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+  }
+  .teamSkills > article > p {
+    font-style: italic;
+    font-size: 14px;
+    width: 90%;
+  }
+  .teamSkills aside {
+    width: 90%;
+  }
+  .teamSkills h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: italic;
+    color: gray;
+  }
+  .teamSkills ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    align-items: center;
+    width: 100%;
+  }
+  .teamSkills li {
+    display: flex;
+    width: 90%;
+    background-color: gainsboro;
+    height: 7vh;
+  }
+  .teamSkills h6 {
+    background-color: rgb(236, 82, 63);
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+  }
+  .teamSkills li:first-child > h6 {
+    width: 90%;
+  }
+  .teamSkills li:nth-child(3) > h6 {
+    width: 70%;
+  }
+  .teamSkills small {
+    color: whitesmoke;
+    padding-left: 2vh;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  .contact > section > article {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+    width: 90%;
+    font-size: 14px;
+  }
+  .contact > section > section {
+    width: 90%;
+  }
+  .contact ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+    list-style-type: none;
+    color: dimgray;
+  }
+  .contact ul a {
+    color: rgb(236, 82, 63);
+  }
+  .contact li {
+    display: flex;
+    -moz-column-gap: 1vh;
+         column-gap: 1vh;
+  }
+  form {
+    row-gap: 2vh;
+  }
+  input {
+    height: 7vh;
+  }
+  ::-moz-placeholder {
+    padding: 2vh;
+    color: darkgray;
+  }
+  ::placeholder {
+    padding: 2vh;
+    color: darkgray;
+  }
+  textarea {
+    resize: none;
+    height: 30vh;
+  }
+  input, textarea {
+    border: 1px solid gainsboro;
+  }
+  [type=submit] {
+    background-color: rgb(236, 82, 63);
+    border: 3px solid transparent;
+    color: whitesmoke;
+  }
+  footer {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    align-items: center;
+  }
+  footer p {
+    font-size: 14px;
+  }
+  footer a {
+    background-color: rgb(236, 82, 63);
+    padding: 1vh 2vh;
+    color: whitesmoke;
+    text-align: center;
+  }
+}
+@media (min-width: 600px) {
+  header > section > ul {
+    display: flex;
+    list-style-type: none;
+    padding-top: 2vh;
+    -moz-column-gap: 2vw;
+         column-gap: 2vw;
+  }
+  header article > a {
+    border: 2px solid rgb(236, 82, 63);
+    transition: 0.4s;
+  }
+  header article > a:hover {
+    background-color: transparent;
+  }
+  header li [class*=envelope],
+  header li [class*=brands] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    color: dimgray;
+    height: 5vh;
+    width: 5vh;
+    text-align: center;
+  }
+  header li [class*=envelope]:hover,
+  header li [class*=brands]:hover {
+    background-color: rgb(236, 82, 63);
+    color: white;
+  }
+  nav {
+    width: 80%;
+  }
+  details > ul {
+    padding-top: 0.5vh;
+    background-color: transparent;
+    row-gap: 0;
+  }
+  details li {
+    background-color: white;
+  }
+  details a {
+    padding: 2vh;
+  }
+  details a:hover {
+    color: rgb(236, 82, 63);
+  }
+  summary {
+    padding: 1vh;
+  }
+  .services > section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    -moz-column-gap: 3vw;
+         column-gap: 3vw;
+    justify-content: center;
+  }
+  .services > section aside {
+    width: 45%;
+    height: 35vh;
+  }
+  .portifolio > section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    -moz-column-gap: 3vw;
+         column-gap: 3vw;
+  }
+  .portifolio > section > figure {
+    width: 45%;
+    height: 35vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .portifolio > section > figure:hover figcaption {
+    height: 100%;
+    bottom: 0%;
+  }
+  .portifolio > section figcaption {
+    display: flex;
+    bottom: -50%;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 0%;
+    background-color: #ec523f;
+    row-gap: 2vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    transition: 0.4s;
+  }
+  .portifolio > section figcaption a {
+    width: 5vh;
+    height: 5vh;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(236, 82, 63);
+  }
+  .portifolio > section figcaption a:hover {
+    background-color: transparent;
+    color: white;
+  }
+  .portifolio > section img {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
+  .portifolio h5 {
+    font-size: 20px;
+  }
+  .portifolio p {
+    color: black;
+  }
+  .teamGallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: unset;
+    justify-content: center;
+    -moz-column-gap: 4vw;
+         column-gap: 4vw;
+    position: relative;
+  }
+  .teamGallery figure {
+    width: 40vh;
+    height: 40vh;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .teamGallery figure:hover figcaption {
+    height: 100%;
+    bottom: 0%;
+  }
+  .teamGallery figcaption {
+    display: flex;
+    bottom: -20%;
+    display: flex;
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    transition: 0.4s;
+    background-color: rgba(236, 82, 63, 0.8);
+    align-items: center;
+    justify-content: center;
+    color: white;
+    row-gap: 2vh;
+  }
+  .teamGallery figcaption > h4 {
+    border-bottom: 1px solid white;
+    padding-bottom: 1vh;
+  }
+  .teamGallery figcaption ul {
+    display: flex;
+    list-style-type: none;
+    -moz-column-gap: 2vh;
+         column-gap: 2vh;
+  }
+  .teamGallery figcaption a {
+    background-color: white;
+    color: rgb(236, 82, 63);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    border-radius: 50%;
+    width: 5vh;
+    height: 5vh;
+    transition: 0.4s;
+  }
+  .teamGallery figcaption a:hover {
+    background-color: rgb(236, 82, 63);
+    color: white;
+  }
+  .teamGallery img {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  .teamSkills {
+    align-items: center;
+  }
+  .teamSkills > section {
+    width: 90%;
+    flex-direction: row;
+    align-items: flex-start;
+    -moz-column-gap: 3vw;
+         column-gap: 3vw;
+  }
+  .teamSkills small {
+    font-size: 12px;
+  }
+  .contact > section {
+    width: 90%;
+    flex-direction: row;
+    -moz-column-gap: 4vw;
+         column-gap: 4vw;
+    align-items: flex-start;
+  }
+  input {
+    height: 5vh;
+  }
+  textarea {
+    height: 20vh;
+  }
+  [type=submit] {
+    border: 2px solid rgb(236, 82, 63);
+    transition: 0.4s;
+  }
+  [type=submit]:hover {
+    background-color: transparent;
+    color: rgb(236, 82, 63);
+    cursor: pointer;
+  }
+}
+@media (min-width: 1000px) {
+  .row > article {
+    width: 100%;
+  }
+  .row > article p {
+    width: 100%;
+    font-size: 18px;
+  }
+  .row > article h2 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  header {
+    height: 80vh;
+  }
+  header nav {
+    height: 18vh;
+    width: 80%;
+    padding: 0;
+  }
+  header nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 100%;
+  }
+  header nav li {
+    display: flex;
+    justify-content: start;
+    height: 100%;
+  }
+  header nav a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-top: 2px solid transparent;
+    color: dimgray;
+  }
+  header nav a:hover {
+    color: rgb(236, 82, 63);
+    border-color: rgb(236, 82, 63);
+  }
+  header details {
+    display: none;
+  }
+  header > article h2,
+  header > article h4 {
+    font-weight: 300;
+  }
+  header > article {
+    height: 100%;
+  }
+  header > article aside {
+    height: 100%;
+    padding: 0;
+  }
+  header ul {
+    -moz-column-gap: 2vh;
+         column-gap: 2vh;
+  }
+  header li [class*=brands],
+  header li [class*=envelope] {
+    height: 6vh;
+    width: 6vh;
+    font-size: 20px;
+  }
+  [class*=fan] {
+    height: 100%;
+  }
+  .services > section {
+    justify-content: center;
+    -moz-column-gap: 5vh;
+         column-gap: 5vh;
+  }
+  .services > section aside {
+    width: 20%;
+  }
+  .services aside {
+    position: relative;
+  }
+  .services aside p {
+    opacity: 0;
+    font-size: 16px;
+  }
+  .services aside h4 {
+    opacity: 0;
+  }
+  .services aside i {
+    display: block;
+    position: absolute;
+    opacity: 1;
+    font-size: 36px;
+  }
+  .services aside:hover p, .services aside:hover h4 {
+    opacity: 1;
+    transition: 0.4s;
+  }
+  .services aside:hover i {
+    opacity: 0;
+    transition: 0.4s;
+  }
+  .portifolio > section {
+    -moz-column-gap: 2vw;
+         column-gap: 2vw;
+  }
+  .portifolio > section figure {
+    width: 20%;
+  }
+  .team > section {
+    row-gap: 10vh;
+  }
+  .teamGallery figure {
+    height: 45vh;
+    width: 45vh;
+  }
+  .teamSkills > article {
+    width: 100%;
+  }
+  .teamSkills > article p {
+    width: 100%;
+  }
+  [type=submit] {
+    height: 8vh;
+  }
+}/*# sourceMappingURL=style.css.map */

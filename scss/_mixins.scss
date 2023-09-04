@@ -1,10 +1,10 @@
-@mixin displayColumn {
+@mixin displayColumn ($rowGap) {
     display: flex;
     flex-direction: column;
+    row-gap: $rowGap;
 }
 
-@mixin displayCenter ($align,$justify) {
-    display: flex;
-    align-items: $align;
-    justify-content: $justify;
+@mixin displayCenter {
+    align-items: center;
+    justify-content: center;
 }

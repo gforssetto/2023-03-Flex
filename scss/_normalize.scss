@@ -10,6 +10,7 @@ html {
 
 a {
     text-decoration: none;
+    transition: .4s;
 }
 
 main h2 {
@@ -38,6 +39,14 @@ form,
 main,
 main > section,
 main > section > article {
-    @include displayColumn;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-image: url(/img/pic-09.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
